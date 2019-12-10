@@ -48,7 +48,6 @@ var controller = (function (UICtrl) {
         document.querySelectorAll(DOM.removeTask).forEach(item => {
             item.addEventListener('click', function (e) {
                 if (e.target.parentNode.parentNode.className === "tasks__task") {
-                    console.log(e.target.parentNode.parentNode)
                     e.target.parentNode.parentNode.remove()
                 }
             })
